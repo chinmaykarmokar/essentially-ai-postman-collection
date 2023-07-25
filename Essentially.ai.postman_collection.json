@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "4405c9b1-562f-4a77-9910-1192669e664f",
+		"name": "Essentially.ai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fetching Stock Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ticker\": \"AAPL\",\n\t\"date\": \"2023-07-18\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/fetchStockData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"fetchStockData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
